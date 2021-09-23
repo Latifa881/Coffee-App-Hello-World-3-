@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/coffe" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="Welcome to our coffee app" />
+
+    <TextView
+        android:id="@+id/selectTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:text="Select the type of the coffee to reveal its recipe" />
+
+
+    <ScrollView
+        android:id="@+id/coffeScrolView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/SHORTBLACKESPRESSO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4d2600"
+                android:text="SHORT BLACK ESPRESSO" />
+
+            <Button
+                android:id="@+id/DOUBLEESPRESSO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#663300"
+                android:text="DOPPIO (DOUBLE ESPRESSO)" />
+
+            <Button
+                android:id="@+id/MACCHIATO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#804000"
+                android:text="MACCHIATO" />
+
+            <Button
+                android:id="@+id/RISTRETTO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#994d00"
+                android:text="RISTRETTO" />
+
+            <Button
+                android:id="@+id/AMERICANO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#b35900"
+                android:text="AMERICANO (LONG BLACK)" />
+
+            <Button
+                android:id="@+id/LATTE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#cc6600"
+                android:text="CAFÉ LATTE" />
+
+            <Button
+                android:id="@+id/CAPPUCCINO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#e67300"
+                android:text="CAPPUCCINO" />
+
+            <Button
+                android:id="@+id/FLATWHITE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff8000"
+                android:text="FLAT WHITE" />
+        </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:id="@+id/linerLayoutRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+    <TextView
+        android:id="@+id/viewRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:textSize="20dp"
+
+        />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4d2600"
+            android:text="Clear"></Button>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
